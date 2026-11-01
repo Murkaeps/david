@@ -17,9 +17,8 @@ namespace AvaloniaApplication13.Models
         [MaxLength(100)]
         public string Content { get; set; } = string.Empty;
         public DateTime CreateAt { get; set; }
-        public Note(int id, string title, string content)
+        public Note(string title, string content)
         {
-            Id = id;
             Title = title;
             Content = content;
             CreateAt = DateTime.Now;
